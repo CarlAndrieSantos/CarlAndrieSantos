@@ -1,0 +1,258 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: rgb(96, 96, 174);
+
+}
+header{
+    background-color: rgb(27, 67, 154);
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
+    color: white;
+    max-height: 100%;
+    max-width: 100%;
+    padding: 20px;
+}
+header .logo{
+    font-size: xx-large;
+}
+nav ul{
+    display: flex; 
+    list-style: none;
+    gap: 30px;
+    
+}
+li a{
+    text-decoration: none;
+    color: white;
+}
+li a:hover{
+    color: aqua;
+    cursor: grab;
+}
+.container{
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+}
+.courses{
+    border-bottom: 5px solid #007bff;
+}
+
+/* General Section Styling */
+.tutors-section {
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+    font-family: Arial, sans-serif;
+}
+.tutors-section header{
+    background-color: rgb(96, 96, 174);
+}
+
+header h1 {
+    font-size: 20px;
+    color: #ffffff;
+}
+
+header p {
+    font-size: 10px;
+    font-weight: 400;
+    color: #ffffff;
+}
+
+/* General Styles */
+
+.tutors-section header {
+    text-align: center;
+    padding: 20px 0;
+    color: #fff;
+}
+
+header h1 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+header p {
+    font-size: 18px;
+}
+
+/* Featured Tutors Section */
+.featured-tutors {
+    max-width: 100%;
+    margin: 50px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Grid layout */
+    gap: 20px; /* Space between the grid items */
+}
+
+.featured-tutors1 h2 {
+    margin-top: 50px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    color: white;
+}
+
+.featured-tutors .tutor {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    
+}
+
+.featured-tutors img {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+   margin-left: 32%;
+}
+
+.featured-tutors h3 {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.featured-tutors p {
+    font-size: 16px;
+    color: #666;
+    margin-bottom: 15px;
+}
+
+.featured-tutors button {
+    background-color: #0056b3;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+.featured-tutors button a{
+    text-decoration: none;
+    color: white;
+}
+
+.featured-tutors button:hover {
+    background-color: #03376f;
+}
+
+/* CTA Section */
+.cta-section {
+    text-align: center;
+    border-radius: 5px;
+    padding: 50px 20px;
+    background-color: #ffffff;
+    color: #090909;
+}
+
+.cta-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+.cta-section p {
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.cta-section button {
+    background-color: #0056b3;
+    color: #f8fcff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.cta-section button:hover {
+    background-color: #576ee1;
+}
+
+/* Responsive Grid for Featured Tutors and Tutors List */
+@media (max-width: 1024px) {
+    .featured-tutors, .tutor-list {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .featured-tutors, .tutor-list {
+        grid-template-columns: 1fr;
+    }
+
+    .filters {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .filters select, .filters input {
+        margin-bottom: 15px;
+        width: 100%;
+    }
+}
+
+
+
+
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.quick-links ul, .social-icons {
+    list-style-type: none;
+    padding: 0;
+}
+
+.quick-links ul li, .social-icons li {
+    margin-bottom: 10px;
+}
+
+.quick-links a, .social-icons a {
+    color: white;
+    text-decoration: none;
+}
+
+.quick-links a:hover {
+    text-decoration: underline;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    transition: opacity 0.3s;
+}
+
+.social-icons a:hover img {
+    opacity: 0.7;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #aaa;
+}

@@ -1,0 +1,219 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
+}
+body{
+    background-color: rgb(255, 255, 255);
+}
+header{
+    background-color: rgb(27, 67, 154);
+    color: white;
+    max-height: 100%;
+    max-width: 100%;
+    padding: 20px;
+}
+header .logo{
+    font-size: xx-large;
+    margin-right: 20%;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+nav ul{
+    display: flex; 
+    list-style: none;
+    gap: 30px;
+}
+li a{
+    text-decoration: none;
+    color: white;
+}
+li a:hover{
+    color: aqua;
+    cursor: grab;
+}
+.userlogo img{
+    width: 50px;
+    height: 50px;
+    margin-left: 50%;
+}
+.courses{
+    border-bottom: 5px solid #007bff;
+}
+.container{
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+}
+/*side bar*/
+.main-container{
+    
+    max-width: 1200px;
+    margin: 2% 10%;
+    display: grid;
+    grid-template-columns: 0fr 0.5fr 1fr;
+    gap: 20px;    
+}
+.main-container a i {
+    font-size: x-large;    
+}
+.sidebar{
+    padding: 1rem;
+}
+.sidebar h2{
+    padding-bottom: 5%;
+}
+.sidebar ul{
+    list-style: none;
+    color: black;
+}
+.course-content{
+    padding: 1rem;
+}
+.learning-outcomes li{
+    list-style: none;
+}
+.learning-outcomes{
+    padding-top: 5%;
+}
+.course-list1 li a{
+    text-decoration: none;
+    color: #ffffff;
+    line-height: 3;
+    background-color: #525af9;
+    font-weight: 300;
+    padding: .5rem;
+    border-radius: .5rem;
+    transition: background-color 0.3s;
+
+}
+.course-list1 li a:hover{
+    background-color: #0056b3;
+}
+.course-subtitle{
+    font-weight: 300;
+    padding-bottom: 1rem;
+}
+.course-image img{
+    width: 250px;
+    height: 150px;
+}
+.course-overview{
+    display: flex;
+    padding-top: 5%;
+}
+.course-info p{
+    font-weight: 300;
+}
+.learn-list{
+    padding-bottom: 1rem;
+}
+.learn-list li{
+    font-weight: 300;
+    margin-left: 2%;
+}
+.module-grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1rem));
+    gap: .5rem;
+    
+}
+.module{
+    background-color: #525af9;
+    padding: .5rem;
+    color: white;
+    border-radius: .5rem;
+    transition: background-color 0.3s;
+}
+.module:hover{
+    background-color: #0056b3;
+}
+.module p{
+    font-weight: 300;
+    font-size: small;
+}
+.course-modules{
+    padding-top: 5%;
+}
+.detail-item p{
+    font-weight: 300;
+}
+.book-now-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: #007bff;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin: 20px 0;
+    transition: background-color 0.3s;
+}
+
+.book-now-button:hover {
+    background-color: #0056b3;
+}
+.course-details{
+    padding-top: 5%;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.quick-links ul, .social-icons {
+    list-style-type: none;
+    padding: 0;
+}
+
+.quick-links ul li, .social-icons li {
+    margin-bottom: 10px;
+}
+
+.quick-links a, .social-icons a {
+    color: white;
+    text-decoration: none;
+}
+
+.quick-links a:hover {
+    text-decoration: underline;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    transition: opacity 0.3s;
+}
+
+.social-icons a:hover img {
+    opacity: 0.7;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #aaa;
+}

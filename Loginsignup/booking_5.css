@@ -1,0 +1,253 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: rgb(96, 96, 174);
+}
+header{
+    background-color: rgb(27, 67, 154);
+    color: white;
+    max-height: 100%;
+    max-width: 100%;
+    padding: 20px;
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
+}
+header .logo{
+    font-size: xx-large;
+    margin-right: 20%;
+}
+nav{
+    display: flex;
+    align-items: center;
+}
+nav ul{
+    display: flex; 
+    list-style: none;
+    gap: 30px;
+}
+li a{
+    text-decoration: none;
+    color: white;
+}
+li a:hover{
+    color: aqua;
+    cursor: grab;
+}
+.userlogo a{
+    color: white;
+    text-decoration: none;
+}
+.container{
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+    
+}
+
+.container_booking{
+    background-color: white;
+    margin: 5% 25%;
+    max-width: 60%;
+    padding: 2rem;
+    border-radius: 1rem;
+    font-family: "Poppins", system-ui;
+    font-weight: 500;
+    box-shadow: 1px 3px 28px -2px rgba(58,54,54,0.75);
+    -webkit-box-shadow: 1px 3px 28px -2px rgba(58,54,54,0.75);
+    -moz-box-shadow: 1px 3px 28px -2px rgba(58,54,54,0.75);
+}
+.container_booking input{
+    padding: 3px;
+    width: 25%;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+}
+.container_booking #gender{
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+}
+.container_booking #preferred_time{
+    padding: 3px;
+    border-radius: 5px;
+    border: 1px solid rgb(0, 0, 0);
+}
+.container_booking h2{
+    padding-bottom: 10px;
+    font-weight: 800;
+}
+.container_booking h3{
+    padding-bottom: 10px;
+    font-weight: 500;
+}
+.choose{
+    display: flex;
+    margin-left: .3rem;
+    justify-content: space-between;
+
+}
+
+.choose select{
+    margin-right: 0rem ;
+    max-width: 30%;
+    border-radius: 5px;
+    
+}
+.name{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.name input{
+    margin-right: 5rem ;
+}
+.info{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.info input{
+    margin-right: 5rem ;
+}
+.info2{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.info2 select{
+    margin-right: 5rem ;
+}
+.address{
+    margin-top:  1rem;
+    margin-left: .4rem;
+}
+.payment{
+    margin-left: .4rem;
+}
+.payment select{
+    padding: 3px;
+    border-radius: 3px;
+}
+form button{
+    padding: .5rem;
+    border-radius: .5rem;
+    background-color: rgb(91, 91, 161);
+    color: white;
+    border-color: rgb(91, 91, 161);
+}
+.terms {
+    display: flex; 
+    align-items: center; /* Align checkbox and label vertically */
+    margin-top: 1rem; /* Adjust as necessary */
+}
+
+.terms input {
+    margin-right: 5px; /* Reduce space between checkbox and label */
+    width: auto; /* Adjust width if necessary */
+}
+
+ /* Modal CSS */
+ .modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5); /* Black background with opacity */
+    overflow: auto;
+    font-family: "Poppins", system-ui;
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 2rem;
+    border-radius: 1rem;
+    border: 1px solid #888;
+    width: 80%;
+    max-width: 600px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+button:hover{
+    background-color: rgb(25, 76, 216);
+    border-color:  rgb(25, 76, 216);
+
+}
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.quick-links ul, .social-icons {
+    list-style-type: none;
+    padding: 0;
+}
+
+.quick-links ul li, .social-icons li {
+    margin-bottom: 10px;
+}
+
+.quick-links a, .social-icons a {
+    color: white;
+    text-decoration: none;
+}
+
+.quick-links a:hover {
+    text-decoration: underline;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;    
+    transition: opacity 0.3s;
+}
+
+.social-icons a:hover img {
+    opacity: 0.7;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #aaa;
+}
+
+
