@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="android-chrome-512x512.png" type="image/x-icon">
+    <link rel="stylesheet" href="contactus.css">
+    <title>Contact Us</title>
+</head>
+<body>
+    <header>
+        <div class="container">
+           <div class="logo">CodeBegin</div>
+        <nav>
+            <ul>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="course.php" >Courses</a></li>
+                <li ><a href="tutor.php">Tutors</a></li>
+                <li class="courses"><a href="contactus.html">Contact Us</a></li>
+                <li><a href="/Loginsignup/login1.php">Login/Sign up</a></li>
+            </ul>
+        </nav> 
+        </div>
+    </header>
+    <div class="container_contactus">
+        <div class="contact-container">
+        <h2>Contact Us</h2>
+        <!-- Success message container -->
+        <div id="success-message" style="display: none; color: green; font-weight: bold; text-align: center;">
+            Your message has been sent successfully!
+        </div>
+
+        <form id="contact-form" method="post" onsubmit="return validateContactForm()">
+            <label for="name">Your Name</label>
+            <input type="text" id="name" name="name" required placeholder="Enter your name">
+
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" required placeholder="Enter your email">
+
+            <label for="message">Message</label>
+            <textarea id="message" name="message" rows="5" required placeholder="Enter your message"></textarea>
+
+            <input type="submit" value="Send Message">
+        </form>
+        <div class="back-link">
+            <p><a href="home.html">Back to Home</a></p>
+        </div>
+        </div>
+
+        <div class="contact-details">
+            <h2>Contact Information</h2>
+            <p>Email: support@codebegin.com</p>
+            <p>Phone: +63 912 345 6789</p>
+            <p>Address: Tamaraw Street, Valenzuela City, Philippines</p>
+
+            <h3>Follow Us</h3>
+            <div class="social-media-icons">
+                <a href="#"><img src="linkedin-big-logo.png" alt="LinkedIn"></a>
+                <a href="#"><img src="twitter.png" alt="Twitter"></a>
+                <a href="#"><img src="github.png" alt="GitHub"></a>
+            </div>
+        </div>
+    </div>
+    
+    <script>
+        function validateContactForm() {
+            const nameInput = document.getElementById('name');
+            const emailInput = document.getElementById('email');
+            const messageInput = document.getElementById('message');
+            const emailValue = emailInput.value;
+            const successMessage = document.getElementById('success-message');
+            const contactForm = document.getElementById('contact-form');
+
+            // Regular expression to validate the email format
+            const emailPattern = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+            // Check for valid email format
+            if (!emailPattern.test(emailValue)) {
+                alert("Please enter a valid email address that contains '@' and '.'");
+                return false; // Prevent form submission
+            }
+
+            // Ensure name, email, and message fields are filled
+            if (nameInput.value.trim() === "" || messageInput.value.trim() === "") {
+                alert("Please fill out all required fields.");
+                return false; // Prevent form submission
+            }
+
+            // Simulate successful submission
+            setTimeout(() => {
+                contactForm.reset();  // Reset form fields
+                successMessage.style.display = "block";  // Show success message
+            }, 500); // Simulate a delay before showing the success message
+
+            return false; // Prevent form submission to server for demonstration purposes
+        }
+    </script>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="quick-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Tutors</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="social-media">
+                <h3>Follow Us</h3>
+                <ul class="social-icons">
+                    <li><a href="#"><img src="linkedin-big-logo.png" alt="LinkedIn"></a></li>
+                    <li><a href="#"><img src="twitter.png" alt="Twitter"></a></li>
+                    <li><a href="#"><img src="github.png" alt="GitHub"></a></li>
+                </ul>
+            </div>
+
+            <div class="contact-info">
+                <h3>Contact Us</h3>
+                <p>Email: info@codebegin.com</p>
+                <p>Phone: +63 912 345 6789</p>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2024 Codebegin. All Rights Reserved.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

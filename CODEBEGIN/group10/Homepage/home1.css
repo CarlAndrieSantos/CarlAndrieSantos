@@ -1,0 +1,391 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", system-ui;
+    font-weight: 700;
+}
+body{
+    background-color: rgb(96, 96, 174);
+}
+header{
+    background-color: rgb(27, 67, 154);
+    color: white;
+    max-height: 100%;
+    max-width: 100%;
+    padding: 20px;
+}
+header .logo{
+    font-size: xx-large;
+}
+nav ul{
+    display: flex; 
+    list-style: none;
+    gap: 30px;
+}
+li a{
+    text-decoration: none;
+    color: white;
+}
+li a:hover{
+    color: aqua;
+    cursor: grab;
+}
+.container{
+    display: flex; 
+    justify-content: space-around;
+    align-items: center;
+}
+.home{
+    border-bottom: 5px solid #007bff;
+}
+.hero{
+    max-width: 100%;
+    height: 80vh;
+}
+.hero .flex{
+    margin: 4% 15%;
+    line-height: 1.5;
+    display: flex;
+    flex-wrap: nowrap;
+    align-items:center;
+    justify-content: center;
+    color: white;
+}
+.flex .content{
+    display: flex;
+    flex-direction: column;
+}
+.hero h1 {
+    font-size: xx-large;
+    padding-bottom: 10px;
+}
+.hero img{
+    max-width: 500px;
+}
+.buttons{
+    display: flex;
+    padding-top: 20px;
+}
+.buttons button{ 
+    color: white;
+    border-color: rgb(27, 67, 154);
+    background-color: rgb(27, 67, 154);
+    border-radius: 1rem;
+    padding: .5rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.6);
+}
+.buttons button:hover{
+    background-color: #fff;
+    color: black;
+    cursor: grab;
+}
+.buttons .b2{
+    margin-left: 15px;
+}
+.box img{
+    max-width: 200px;
+    border-radius: 1rem;
+}
+.box .img1{
+    height: 200px;
+}
+.section1{
+    max-width: 100%;
+    margin: 0 5%;
+    flex-wrap: nowrap;
+
+}
+.section1 h1{
+    text-align: center;
+    font-size: 36px;
+    padding-bottom: 1rem;
+    color: white;
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 15px;  
+}
+.box{
+    
+    background: #2b559e;
+    color: white;
+    width: 20%;
+    height: 45vh;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+.box p{
+    padding-top: 1%;
+    font-size: small;
+    font-weight: 300;
+}
+@media (max-width: 768px) {
+    
+}
+.section2{
+    max-width: 100%;
+    margin: 5% 5%;
+    flex-wrap: nowrap;
+}
+.section2 h1{
+    text-align: center;
+    font-size: 36px;
+    padding-bottom: 1rem;
+    color: white;
+    
+}
+.flex2 .css1{
+    max-width: 200px;
+    height: 200px;
+    border-radius: 1rem;
+    object-fit: contain;
+}
+.flex2 .css2{
+    max-width: 200px;
+    height: 225px;
+    border-radius: 1rem;
+    object-fit: contain;
+}
+.flex2 .css3{
+    max-width: 200px;
+    height: 200px;
+    border-radius: 1rem;
+    object-fit: contain;
+}
+.flex2 .css4{
+    max-width: 200px;
+    height: 200px;
+    border-radius: 1rem;
+    object-fit: contain;
+    margin-bottom: 20px;
+}
+.container2{
+    display: flex;
+    align-items: center;
+    justify-content: center; 
+    gap: 15px; 
+
+}
+.flex2{
+    background: #2b559e;
+    color: white;
+    width: 20%;
+    height: 50vh;
+    border-radius: 1rem;
+    padding: 1rem;
+    text-align: center;
+}
+.flex2 a{
+    text-decoration: none;
+    color: rgb(135, 135, 218);
+    font-size: small;
+    
+}
+.flex2 p{
+    padding-bottom: 10px;
+}
+@media (max-width: 768px) {
+    
+}
+.tutors-section {
+    padding-bottom: 50px;
+    text-align: center;
+    max-width: 1200px;
+    margin: 0% 18%;
+
+}
+
+.tutors-section h2 {
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: white;
+}
+
+.tutors-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    justify-items: center;
+    
+}
+
+.tutor-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    max-width: 300px;
+    
+}
+
+.tutor-photo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 20px;
+}
+
+.tutor-card h3 {
+    font-size: 22px;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+.tutor-card p {
+    font-size: 10px;
+    color: #666;
+}
+
+.expertise {
+    font-style: italic;
+    color: #555;
+}
+
+.book-session {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background: #2b559e;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+.book-session:hover {
+    background-color: #0056b3;
+}
+
+/*section how it works*/
+.how-it-works {
+    padding: 60px 20px;
+    background-color: #f2f2f2;
+    text-align: center;
+}
+
+.how-it-works h2 {
+    font-size: 36px;
+    margin-bottom: 50px;
+    color: #333;
+}
+
+.steps-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+}
+
+.step {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.step-icon img {
+    width: 60px;
+    height: 60px;
+    margin-bottom: 15px;
+}
+
+.step h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #2b559e;
+}
+
+.step p {
+    font-size: 16px;
+    color: #666;
+}
+
+/* Call to Action Section */
+.cta-section {
+    padding: 60px 20px;
+    background-color: rgb(27, 67, 154);
+    text-align: center;
+    color: white;
+}
+
+.cta-section h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+}
+
+.cta-button {
+    display: inline-block;
+    padding: 15px 30px;
+    background-color: rgb(96, 96, 174);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.cta-button:hover {
+    background-color: white;
+    color: black;
+}
+
+/* Footer Section */
+.footer {
+    background-color: #333;
+    color: white;
+    padding: 40px 20px;
+}
+
+.footer-content {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 30px;
+    text-align: center;
+}
+
+.quick-links ul, .social-icons {
+    list-style-type: none;
+    padding: 0;
+}
+
+.quick-links ul li, .social-icons li {
+    margin-bottom: 10px;
+}
+
+.quick-links a, .social-icons a {
+    color: white;
+    text-decoration: none;
+}
+
+.quick-links a:hover {
+    text-decoration: underline;
+}
+
+.social-icons img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;    
+    transition: opacity 0.3s;
+}
+
+.social-icons a:hover img {
+    opacity: 0.7;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
+
+.footer-bottom {
+    margin-top: 30px;
+    text-align: center;
+    font-size: 14px;
+    color: #aaa;
+}
+
+
